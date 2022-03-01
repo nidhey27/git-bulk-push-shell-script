@@ -26,15 +26,32 @@ do
 		echo "****************** PWD : $(pwd) ************************** "
 		# Check if git is initilized or not
 		if [ -d .git ]; then
+			git add .
+			git commit -m "Auto Commit using Shell Script"
 			if [[ "$(git push -u origin master )" == *"Done"* ]]; then
 				echo "GIT PUSH WAS SUCCESSFULL"
 			fi
-			echo "Has git initilized"
+			echo "Has git initilized &"
 			echo "REMOTE URL: $( git config --get remote.origin.url )"
-			echo "###################################################"
+			echo "-------------------------------------------------------"
 		else
-			echo "Does not has git initilized"
-		fi;
+			echo "GIT NOT INITILIZED"
+			echo "Do You want to add remote repo? (y/n)"
+			read -r answer
+			if [ "$answer" = "y" ]; then
+				echo "Enter the remote repo URL"
+				read -r remote_url
+				git init
+				git remote add origin $remote_url
+				git add .
+				git commit -m "Initial commit using shell script"
+				if [[ "$(git push -u origin master )" == *"Done"* ]]; then
+					git push -u origin master
+					echo "REMOTE URL: $( git config --get remote.origin.url )"
+					echo "-------------------------------------------------------"
+				fi
+			fi
+		fi
 		cd ..
 		
 	fi
