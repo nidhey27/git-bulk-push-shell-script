@@ -29,13 +29,15 @@ git config --global user.email "your_email_address@example.com"
 git config --global --list
 ```
 
+You need to add remote-url to all the projects initally and should have at least one commit.
+
 #### Steps to Execute the Script
 
 1. Go the the Projects DIR where you have all your projects
 2. Clone the SHELL script using
-	```
-	git clone https://github.com/nidhey27/git-bulk-push-shell-script.git
-	```
+```
+git clone https://github.com/nidhey27/git-bulk-push-shell-script.git
+```
 3. Copy the _push_to_git.sh_ file to the Root DIR of the Projects where you have all other projects
 Example:
 ```bash
@@ -52,4 +54,6 @@ C:.
 ```
 $ . push_to_git.sh
 ```
+
+
 
