@@ -31,3 +31,25 @@ git config --global --list
 
 #### Steps to Execute the Script
 
+1. Go the the Projects DIR where you have all your projects
+2. Clone the SHELL script using
+	```
+	git clone https://github.com/nidhey27/git-bulk-push-shell-script.git
+	```
+3. Copy the _push_to_git.sh_ file to the Root DIR of the Projects where you have all other projects
+Example:
+```bash
+C:.
+│   push_to_git.sh
+│
+├───Project_1
+├───Project_2
+├───Project_3
+└───Project_4
+
+```
+4. Now you have your shell script in the root DIR, using the following command to run the script
+```
+$ . push_to_git.sh
+```
+
