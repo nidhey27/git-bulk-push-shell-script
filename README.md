@@ -56,6 +56,9 @@ $ . push_to_git.sh
 ```
 5. If the DIR does not have git initilized, then it will ask *Do You want to add remote repo? (y/n)*
 6. If you choose Y then you will be asked for URL - *Enter the remote repo URL*
+![alt text](https://github.com/nidhey27/git-bulk-push-shell-script/blob/master/Screenshots/Annotation%202022-03-01%20214027.png)
 7. After adding the URL, you are read to go..
+![alt text](https://github.com/nidhey27/git-bulk-push-shell-script/blob/master/Screenshots/Annotation%202022-03-01%20214007.png)
+
 
 
