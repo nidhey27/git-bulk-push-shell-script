@@ -29,7 +29,7 @@ git config --global user.email "your_email_address@example.com"
 git config --global --list
 ```
 
-You need to add remote-url to all the projects initally and should have at least one commit.
+
 
 #### Steps to Execute the Script
 
@@ -54,6 +54,8 @@ C:.
 ```
 $ . push_to_git.sh
 ```
-
+5. If the DIR does not have git initilized, then it will ask *Do You want to add remote repo? (y/n)*
+6. If you choose Y then you will be asked for URL - *Enter the remote repo URL*
+7. After adding the URL, you are read to go..
 
 

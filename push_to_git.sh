@@ -49,6 +49,8 @@ do
 					git push -u origin master
 					echo "REMOTE URL: $( git config --get remote.origin.url )"
 					echo "-------------------------------------------------------"
+				else
+					continue
 				fi
 			fi
 		fi
